@@ -24,7 +24,7 @@ router.get('/products/statistics', async (req, res) => {
                 },
             },
             {
-                $sort: { category: 1, sum: -1 },
+                $sort: { totalCount: -1, sum: -1 },
             },
         ]);
         return res.render('statistics', { occuranciesByName });
