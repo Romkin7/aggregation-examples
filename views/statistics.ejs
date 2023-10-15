@@ -6,7 +6,7 @@
                 <% occuranciesByName.forEach((occurancy)=> { %>
                     <div class="col-md-12">
                         <h2>
-                            <%= occurancy._id.name %> - <%= occurancy.totalCount %> pieces - <%= occurancy.sum %>€
+                            <%= occurancy._id.name %> - occurancies: <%= occurancy.totalCount %> - <%= occurancy.sum %>€
                         </h2>
                     </div>
                     <% }); %>
