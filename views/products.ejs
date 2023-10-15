@@ -1,0 +1,17 @@
+<% layout('layout') -%>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Products</h1>
+                    <a class="button button-success" href="/products/new">Create product</a>
+                </div>
+            </div>
+            <div class="row">
+                <% products.forEach((product)=> { %>
+                    <%- include('./components/productCard', {product}) %>
+                        <% }); %>
+            </div>
+        </div>
+    </section>
